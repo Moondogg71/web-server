@@ -5,7 +5,7 @@ var PORT = 3000;
 
 var middleware = {
 	requireAuthentication: function(req, res, next) {
-		console.log("Private Route Hit");
+		console.log("Private Route Hit!!!!");
 		next();
 	},
 	logger: function(req, res, next) {
@@ -26,7 +26,7 @@ app.use(middleware.logger);
 //ROUTES ----------------------------------------------------------
 
 app.get('/about', middleware.requireAuthentication, function(req, res, next){
-	res.send("This is the About Route");
+	res.send("This is the About Route!!!!");
 });
 
 
