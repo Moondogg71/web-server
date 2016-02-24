@@ -26,7 +26,7 @@ app.use(middleware.logger);
 //ROUTES ----------------------------------------------------------
 
 app.get('/about', middleware.requireAuthentication, function(req, res, next){
-	res.send("This is the About Route!!!!");
+	res.send("This is the About Route");
 });
 
 
